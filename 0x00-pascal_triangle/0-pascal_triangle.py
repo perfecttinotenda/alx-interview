@@ -1,17 +1,13 @@
 #!/usr/bin/python3
-
 def pascal_triangle(n):
-    """
-        This will
-        Generate the  Pascals' triangle 
-        up_to_the nth row.
-    """
+
     triangle = []
     
     if n <= 0:
-        return []
-
+        return triangle
+    
     triangle = [[1]]
+
     for i in range(1, n):
         temp = [1]
         for j in range(len(triangle[i - 1]) - 1):
