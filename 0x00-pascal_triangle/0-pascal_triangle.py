@@ -6,18 +6,16 @@
 """
 def pascal_triangle(n):
 
-    triangle = []
-    
-    if n <= 0:
-        return triangle
+    tem = []
 
+    if n <= 0:
+        return tem
 
     for i in range(n):
-        temp = [1] * (i + 1)
-        triangle.append(temp)
+        roh = [1] * (i + 1)
+        tem.append(roh)
 
         if i > 1:
-            for j in range(i, 1):
-                triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
-
-    return triangle
+            for g in range(1, i):
+                tem[i][g] = tem[i - 1][g - 1] + tem[i - 1][g]
+    return tem
