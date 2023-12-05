@@ -12,8 +12,8 @@ def pascal_triangle(n):
         return tem
 
     for i in range(n):
-        roh = [1] * (i + 1)
-        tem.append(roh)
+        row = [1] * (i + 1)
+        tem.append(row)
 
         if i > 1:
             for g in range(1, i):
